@@ -336,10 +336,6 @@
           <div class="name">Nano Banana (Fast)</div>
           <div class="desc">Speed optimized, ~1024px</div>
         </button>
-        <button class="model-btn" data-model="gemini-3-pro-image-preview" onclick="selectModel(this)">
-          <div class="name">Nano Banana Pro</div>
-          <div class="desc">Studio quality, up to 4K</div>
-        </button>
       </div>
     </div>
 
@@ -531,7 +527,7 @@
 
   function checkResWarn() {
     const w = document.getElementById('resWarn');
-    w.style.display = (state.resolution === '4K' && state.model !== 'gemini-3-pro-image-preview') ? 'block' : 'none';
+    w.style.display = (state.resolution === '4K') ? 'block' : 'none';
   }
 
   function toggleSwitch(id) {
@@ -645,7 +641,7 @@ COMPOSITION TO PRESERVE:
 
 Be concise but precise.`;
 
-    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ contents: [{ parts: [
@@ -675,7 +671,7 @@ Describe:
 
 Be VERY specific about color tones - this is critical for accurate reproduction.`;
 
-    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ contents: [{ parts: [
@@ -767,8 +763,8 @@ DO NOT alter identity, change arrangement, add/remove objects, or apply cartoon 
       payload.generationConfig.imageConfig = { aspectRatio: state.aspectRatio };
     }
 
-    // Use the strongest image generation model for best quality
-    const genModel = 'gemini-3-pro-image-preview';
+    // Use the model selected in the UI
+    const genModel = state.model;
     const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${genModel}:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -835,7 +831,7 @@ ISSUES: [List specific issues, or "None" if passed]`;
       { text: prompt }
     ];
 
-    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ contents: [{ parts }] })
