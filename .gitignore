@@ -1,3 +1,6 @@
+# Dependencies
+node_modules/
+
 # Test files
 test_api*.js
 
@@ -9,3 +12,8 @@ reference*.jpeg
 reference*.png
 subject*.jpg
 subject*.jpeg
+
+# Tooling
+.vercel
+.env*.local
+.claude/

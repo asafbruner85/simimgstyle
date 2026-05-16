@@ -1,0 +1,76 @@
+{
+  "pages": [
+    {
+      "name": "Homepage",
+      "title": "Primelis Signal | Branded Search Optimization",
+      "url": "https://signal-prime.com/",
+      "h1": [
+        "Primelis Signal"
+      ],
+      "h2": [],
+      "h3": [],
+      "navLinks": [
+        {
+          "text": "Learn more",
+          "href": "https://www.primelis.com/primelis-signal/"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Enter exact spend",
+          "href": null,
+          "classes": "text-xs font-semibold text-primary/90 hover:text-primary"
+        },
+        {
+          "text": "$15K–$50Kper month",
+          "href": null,
+          "classes": "rounded-xl h-[56px] px-4 py-3 text-left transition select-none flex flex-col justify-between border border-white/10 bg-white/[0.07] text-white/85 hover:bg-white/[0.10] hover:border-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#A855F7]/35 "
+        },
+        {
+          "text": "$50K–$100Kper month",
+          "href": null,
+          "classes": "rounded-xl h-[56px] px-4 py-3 text-left transition select-none flex flex-col justify-between border border-white/10 bg-white/[0.07] text-white/85 hover:bg-white/[0.10] hover:border-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#A855F7]/35 "
+        },
+        {
+          "text": "$100K–$200Kper month",
+          "href": null,
+          "classes": "rounded-xl h-[56px] px-4 py-3 text-left transition select-none flex flex-col justify-between border border-white/10 bg-white/[0.07] text-white/85 hover:bg-white/[0.10] hover:border-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#A855F7]/35 "
+        },
+        {
+          "text": "$200K–$500Kper month",
+          "href": null,
+          "classes": "rounded-xl h-[56px] px-4 py-3 text-left transition select-none flex flex-col justify-between border border-white/10 bg-white/[0.07] text-white/85 hover:bg-white/[0.10] hover:border-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#A855F7]/35 "
+        },
+        {
+          "text": "$500K–$1Mper month",
+          "href": null,
+          "classes": "rounded-xl h-[56px] px-4 py-3 text-left transition select-none flex flex-col justify-between border border-white/10 bg-white/[0.07] text-white/85 hover:bg-white/[0.10] hover:border-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#A855F7]/35 "
+        },
+        {
+          "text": "$1M+per month",
+          "href": null,
+          "classes": "rounded-xl h-[56px] px-4 py-3 text-left transition select-none flex flex-col justify-between border border-white/10 bg-white/[0.07] text-white/85 hover:bg-white/[0.10] hover:border-white/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#A855F7]/35 "
+        },
+        {
+          "text": "Analyze branded SERP behavior",
+          "href": null,
+          "classes": "inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-primary/90 hover:shadow-primary/20 px-4 py-2 h-12 w-full rounded-xl text-base font-semibold bg-muted text-muted-foreground cursor-not-allowed shadow-[0_18px_45px_rgba(0,0,0,0.25)] hover:shadow-[0_22px_60px_rgba(0,0,0,0.35)]"
+        }
+      ],
+      "paragraphs": [
+        "See how much your branded search is really costing you — in under a minute."
+      ],
+      "images": [],
+      "forms": [],
+      "fullText": "Primelis\nSignal\nBRAND SEARCH MONITOR\nLearn more\nPrimelis Signal\n\nSee how much your branded search is really costing you — in under a minute.\n\nLive SERP detection engine\nYour domain\nMonthly branded spend\nEnter exact spend\n$15K–$50K\nper month\n$50K–$100K\nper month\n$100K–$200K\nper month\n$200K–$500K\nper month\n$500K–$1M\nper month\n$1M+\nper month\nFor brands spending $15K+ per month on branded search\nAnalyze branded SERP behavior\nBased on live branded SERP signals • ~30–40 seconds"
+    },
+    {
+      "name": "After CTA Click",
+      "url": "https://signal-prime.com/",
+      "title": "Primelis Signal | Branded Search Optimization",
+      "fullText": "Primelis\nSignal\nBRAND SEARCH MONITOR\nLearn more\nPrimelis Signal\n\nSee how much your branded search is really costing you — in under a minute.\n\nLive SERP detection engine\nYour domain\nMonthly branded spend\nChoose a range\n/mo\nFor brands spending $15K+ per month on branded search\nAnalyze branded SERP behavior\nBased on live branded SERP signals • ~30–40 seconds"
+    }
+  ],
+  "forms": [],
+  "errors": []
+}

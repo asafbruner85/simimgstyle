@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primelis Signal - UX Analysis Report</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #1a1a2e;
+      background: #fff;
+      padding: 40px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      border-bottom: 3px solid #8b5cf6;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      color: #1a1a2e;
+      margin-bottom: 5px;
+    }
+
+    .header .subtitle {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .header .url {
+      color: #8b5cf6;
+      font-weight: 500;
+    }
+
+    .meta {
+      display: flex;
+      gap: 30px;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #1a1a2e;
+      margin: 35px 0 15px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #374151;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #4b5563;
+    }
+
+    .overview-box {
+      background: #f8f7ff;
+      border-left: 4px solid #8b5cf6;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .works-well {
+      background: #f0fdf4;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .works-well h3 {
+      color: #166534;
+    }
+
+    .improvements {
+      background: #fef3c7;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .improvements h3 {
+      color: #92400e;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #4b5563;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    th {
+      background: #f3f4f6;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #374151;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #4b5563;
+    }
+
+    .quick-wins {
+      background: #ede9fe;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .quick-wins h3 {
+      color: #5b21b6;
+      margin-top: 0;
+    }
+
+    .quick-wins ol {
+      margin-left: 20px;
+    }
+
+    .verdict {
+      background: linear-gradient(135deg, #1a1a2e, #2d2d44);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    .verdict h2 {
+      color: white;
+      border-bottom-color: rgba(255,255,255,0.2);
+      margin-top: 0;
+    }
+
+    .verdict p {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .screenshot {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .screenshot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .screenshot-label {
+      background: #f3f4f6;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    @media print {
+      body {
+        padding: 20px 40px;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>UX & Conversion Analysis Report</h1>
+    <p class="subtitle">Website Review for <span class="url">signal-prime.com</span></p>
+    <div class="meta">
+      <span>Date: February 14, 2026</span>
+      <span>Analysis Type: Full Funnel Review</span>
+    </div>
+    <div class="score-badge">Overall Score: 7/10</div>
+  </div>
+
+  <div class="overview-box">
+    <strong>Executive Summary:</strong> Primelis Signal is a lead-generation tool targeting brands spending $15K+/month on branded search. The tool analyzes potential savings from optimizing branded ad spend. The core funnel is well-designed with a clever "free analysis" hook, but lacks trust signals and has conversion optimization gaps on the results page.
+  </div>
+
+  <div class="section">
+    <h2>Funnel Overview</h2>
+    <p>The site uses a 4-step funnel: <strong>Input → Analysis → Results → Next Steps</strong></p>
+    <ul>
+      <li><strong>Step 1 (Input):</strong> User enters domain + selects monthly spend range</li>
+      <li><strong>Step 2 (Analysis):</strong> Live SERP analysis with progress indicators (~30-40 seconds)</li>
+      <li><strong>Step 3 (Results):</strong> Shows key metrics (top of page %, solo-bidder %, savings %)</li>
+      <li><strong>Step 4 (Next Steps):</strong> CTAs to book meeting or receive results via email</li>
+    </ul>
+  </div>
+
+  <h2>What Works Well</h2>
+
+  <div class="works-well">
+    <h3>1. Brilliant Value Proposition</h3>
+    <ul>
+      <li>"See how much your branded search is really costing you — in under a minute"</li>
+      <li>Immediate, clear benefit with low time commitment</li>
+      <li>Targets a real pain point (wasted branded spend)</li>
+    </ul>
+  </div>
+
+  <div class="works-well">
+    <h3>2. Frictionless Entry</h3>
+    <ul>
+      <li>Only 2 inputs required: domain + spend range</li>
+      <li>No email/signup gate before seeing results</li>
+      <li>Smart domain validation with "Looks good" + brand detection feedback</li>
+    </ul>
+  </div>
+
+  <div class="works-well">
+    <h3>3. Excellent Loading Experience</h3>
+    <ul>
+      <li>Progress stepper (1→2→3→4) sets expectations</li>
+      <li>Live "Signal Feed" with real-time updates feels authentic</li>
+      <li>Animated progress bar with task breakdown (Mapping → Detecting → Estimating)</li>
+    </ul>
+  </div>
+
+  <div class="works-well">
+    <h3>4. Strong Visual Design</h3>
+    <ul>
+      <li>Dark mode with purple accent creates premium tech feel</li>
+      <li>Clean typography and generous whitespace</li>
+      <li>Brand logo auto-fetched adds personalization</li>
+    </ul>
+  </div>
+
+  <div class="works-well">
+    <h3>5. Results Presentation</h3>
+    <ul>
+      <li>Key metrics front and center (84% top of page, 43% savings)</li>
+      <li>Simple before/after chart is instantly understandable</li>
+      <li>"Directional preview, not a billing-impact estimate" = good expectation management</li>
+    </ul>
+  </div>
+
+  <div class="works-well">
+    <h3>6. Clear CTAs at Conversion Point</h3>
+    <ul>
+      <li>"Book a meeting" (primary) vs "Send me the results by email" (secondary)</li>
+      <li>Low-commitment email option captures hesitant leads</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <h2>Areas for Improvement</h2>
+
+  <div class="improvements">
+    <h3>1. Above-the-Fold Issues</h3>
+    <table>
+      <tr>
+        <th>Problem</th>
+        <th>Impact</th>
+        <th>Recommended Fix</th>
+      </tr>
+      <tr>
+        <td>CTA button starts disabled/gray</td>
+        <td>Users may not realize they need to fill fields</td>
+        <td>Add micro-copy like "Enter your domain to begin"</td>
+      </tr>
+      <tr>
+        <td>No visible social proof</td>
+        <td>Reduces trust for first-time visitors</td>
+        <td>Add "Trusted by 500+ brands" or client logos</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="improvements">
+    <h3>2. Mobile Experience</h3>
+    <ul>
+      <li>Spend range buttons stack awkwardly on mobile</li>
+      <li>Consider a dropdown or slider for mobile devices</li>
+      <li>"Enter exact spend" toggle is too small to tap easily</li>
+    </ul>
+  </div>
+
+  <div class="improvements">
+    <h3>3. Missing Trust Signals</h3>
+    <ul>
+      <li>No client logos on landing page</li>
+      <li>No testimonials or case studies</li>
+      <li>No "As seen in" press mentions</li>
+      <li>The "Learn more" link goes to primelis.com but there's no explanation of who Primelis is</li>
+    </ul>
+  </div>
+
+  <div class="improvements">
+    <h3>4. Funnel Friction Points</h3>
+    <table>
+      <tr>
+        <th>Step</th>
+        <th>Issue</th>
+      </tr>
+      <tr>
+        <td>Domain input</td>
+        <td>No autocomplete or suggestions</td>
+      </tr>
+      <tr>
+        <td>Spend selection</td>
+        <td>Highlighting of selected option could be clearer (border is subtle)</td>
+      </tr>
+      <tr>
+        <td>Loading state</td>
+        <td>30-40 seconds is long — consider background processing + email delivery</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="improvements">
+    <h3>5. Results Page Gaps</h3>
+    <ul>
+      <li>"Savings: 43%" lacks context — 43% of what dollar amount?</li>
+      <li>No breakdown of <em>how</em> they'll achieve the savings</li>
+      <li>"Back to analysis" link feels like an escape hatch, not a next step</li>
+      <li>Missing urgency/scarcity elements ("Limited spots for Q1 onboarding")</li>
+    </ul>
+  </div>
+
+  <div class="improvements">
+    <h3>6. Technical/SEO Issues</h3>
+    <ul>
+      <li>Single Page App with no SSR = poor SEO (ironic for a search company)</li>
+      <li>No &lt;noscript&gt; fallback for users without JavaScript</li>
+      <li>Page title doesn't change between funnel steps</li>
+    </ul>
+  </div>
+
+  <div class="improvements">
+    <h3>7. Conversion Optimization Gaps</h3>
+    <ul>
+      <li>No exit-intent popup to capture abandoning visitors</li>
+      <li>No chatbot or live support for questions</li>
+      <li>Email capture at the end should be a form field, not just a link</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <div class="quick-wins">
+    <h3>Recommended Quick Wins</h3>
+    <ol>
+      <li><strong>Add social proof</strong> to homepage (client logos, "500+ brands analyzed")</li>
+      <li><strong>Improve button state feedback</strong> — make it obvious when the form is complete</li>
+      <li><strong>Personalize results</strong> with actual dollar amounts based on their spend range</li>
+      <li><strong>Add urgency</strong> to booking CTA ("Limited availability this month")</li>
+      <li><strong>Implement SSR</strong> for the landing page (even just the hero section)</li>
+      <li><strong>A/B test</strong> gating results behind email vs. current ungated approach</li>
+    </ol>
+  </div>
+
+  <div class="verdict">
+    <h2>Overall Verdict</h2>
+    <p>This is a <strong>well-designed lead-gen tool</strong> with a clever hook. The interactive analysis creates perceived value before asking for contact info. The main weaknesses are lack of trust signals and some missed conversion optimization opportunities on the results page.</p>
+    <p style="margin-top: 15px;">The core concept — <em>"free analysis tool → impressive results → book a call"</em> — is solid and well-executed. With the recommended improvements, conversion rates could increase significantly.</p>
+  </div>
+
+  <div class="footer">
+    <p>Analysis conducted using automated headless browser testing</p>
+    <p>Generated February 14, 2026</p>
+  </div>
+
+</body>
+</html>
